@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookify</title>
+    <link rel="stylesheet" href=bookifystyle.css>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+    <div class="navbar">
+        <h1>Bookify</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert Kiyosak</h5>
+            <p>"Rich Dad Poor Dad" by Robert Kiyosaki is a personal finance book that challenges conventional wisdom about money and investing. Through contrasting the financial philosophies of his two "fathers" – his biological father ("Poor Dad"), a highly educated but financially struggling schoolteacher, and the father of his best friend ("Rich Dad"), a successful businessman – Kiyosaki explores key concepts like financial literacy, asset acquisition, and building wealth. The book emphasizes the importance of financial education, investing in assets that generate income, and creating multiple streams of income to achieve financial freedom.   
+
+                This book has become a global bestseller, inspiring millions of readers to re-evaluate their relationship with money and take control of their financial futures.
+            </p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="bookifyscript.js"></script>
+</body>
+</html>
